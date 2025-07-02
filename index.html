@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Screen Recorder with Mic</title>
+  <title>Screen Recorder with Mic-Raj Groups</title>
   <style>
     body { font-family: sans-serif; text-align: center; padding: 20px; }
     video { width: 80%; margin-top: 20px; border: 1px solid #ccc; }
     button { margin: 10px; padding: 10px 20px; font-size: 16px; }
+    .raj{
+        background-color: aqua;
+        cursor: pointer;
+        border-radius: 19px;
+        font-size: larger;
+        font-weight: bolder;
+        text-align: center;
+        font-style: italic;
+        text-align: center;
+        
+    } 
+    .product{
+        color: rgb(20, 220, 217);
+        cursor: pointer;
+        border-radius: 19px;
+        font-size: larger;
+        font-weight: bolder;
+        text-align: center;
+        font-style: initial;
+    }
   </style>
 </head>
 <body>
 
-  <h2>🎥 Screen Recorder with Microphone</h2>
+  <h2>🎥 Screen Recorder with Microphone🎤</h2>
+  <h3 class="product">
+    🎗RajProduct🎗
+  </h3>
   <button id="startBtn">Start Recording</button>
   <button id="stopBtn" disabled>Stop Recording</button>
   <a id="downloadLink" style="display: none;" download="recording.webm">Download Recording</a>
   <br>
   <video id="preview" controls autoplay muted></video>
+  <h4 class="raj">
+    @2025 copyrights reserved by Raj Groups
+  </h4>
 
   <script>
     let mediaRecorder;
@@ -80,6 +106,9 @@
       // Stop all active tracks
       video.srcObject.getTracks().forEach(track => track.stop());
     };
+   <p class="raj">
+      Raj Groups
+   </p>
   </script>
 
 </body>
